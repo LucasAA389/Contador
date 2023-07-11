@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: rgba(128, 0, 128, 0.718);
+            color: white;
+            display: grid;
+            place-items: center;
+        }
+        h1{
+            color: black;
+            font-size: 50px;
+        }
+        p {
+            font-size: 70px;
+            color: darkblue;
+        }
+        button{
+            color: black;
+            font-size: 40px;
+            background-color: darkmagenta;
+            border-radius: 20px;
+        }
+        section {
+            background: rgba(17, 204, 17, 0.653);
+            padding: 40px;
+            border-radius: 100px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1><i><strong>Contando</strong></i></h1>
+        <p>pontuação do jogador 1: </p>
+        <p id="resultado1"></p>
+        <button onclick="pontuar1()">aumentar</button>
+        <button onclick="diminuir1()">diminuir</button>
+    </section>
+    <section>
+        <h1><i><strong>Contando</strong></i></h1>
+        <p>pontuação do jogador 2: </p>
+        <p id="resultado2"></p>
+        <button onclick="pontuar2()">aumentar</button>
+        <button onclick="diminuir2()">diminuir</button>
+    </section>
+    <script src="Contador.js"></script>
+</body>
+</html>
